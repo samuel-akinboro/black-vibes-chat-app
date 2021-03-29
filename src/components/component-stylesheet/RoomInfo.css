@@ -1,0 +1,45 @@
+.room__info {
+    flex: 0.42;
+    border-left: 1px solid #36373c;
+    display: flex;
+    flex-direction: column;
+}
+
+.room__info__header{
+    padding: 15px 15px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #36373c;
+}
+
+.room__info__details{
+    position: relative;
+}
+
+.room__info__header span {
+    color: #5f6065;
+    font-size: 0.8em;
+}
+
+.room__info__details .date-created {
+    margin-top: 9px;
+    color: #5f6065;
+    font-size: 0.8em;
+}
+
+.room__info__details .MuiSvgIcon-root {
+    font-size: 0.8em;
+    color: #fff;
+}
+
+.room__info__details .room__headerIcons {
+    transition: 0.4s;
+    position: absolute;
+    right: 10px;
+    top: 27%;
+    background-color: #3A3B40 !important;
+    padding: 7px !important;
+}
+
+.room__info__details .room__headerIcons:hover {
+    background-color: #2d2d2e !important;
+}

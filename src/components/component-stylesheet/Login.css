@@ -1,0 +1,44 @@
+.login{
+    min-height: 100%;
+    display: grid;
+    min-width: 100%;
+    place-content: center;
+}
+
+.login__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login__container img{
+    height: 40px;
+    object-fit: contain;
+    margin-bottom: 2em;
+}
+
+.login__container button{
+    background-color: #EA9506;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+@keyframes example {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* The element to apply the animation to */
+.login__container img {
+    animation-name: example;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+}
