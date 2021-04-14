@@ -129,54 +129,6 @@ function RoomChat({type}) {
             <span className="timestamp">{new Date().toUTCString()}</span>
           </p>
 
-          <p className="message sender">
-            <span className="name">You</span>
-            How are you doing
-            <span className="timestamp">{new Date().toUTCString()}</span>
-          </p>
-
-          <p className="message">
-            <span className="name">john snow</span>
-            I'm fine, what about you
-            <span className="timestamp">{new Date().toUTCString()}</span>
-          </p>
-
-          <p className="message sender">
-            <span className="name">You</span>
-            How are you doing
-            <span className="timestamp">{new Date().toUTCString()}</span>
-          </p>
-
-          <p className="message">
-            <span className="name">john snow</span>
-            I'm fine, what about you
-            <span className="timestamp">{new Date().toUTCString()}</span>
-          </p>
-
-          <p className="message sender">
-            <span className="name">You</span>
-            How are you doing
-            <span className="timestamp">{new Date().toUTCString()}</span>
-          </p>
-
-          <p className="message">
-            <span className="name">john snow</span>
-            I'm fine, what about you
-            <span className="timestamp">{new Date().toUTCString()}</span>
-          </p>
-
-          <p className="message sender">
-            <span className="name">You</span>
-            How are you doing
-            <span className="timestamp">{new Date().toUTCString()}</span>
-          </p>
-
-          <p className="message">
-            <span className="name">john snow</span>
-            I'm fine, what about you
-            <span className="timestamp">{new Date().toUTCString()}</span>
-          </p>
-
           {roomMessage.map((message) => (
             <p className="message sender">
               <span className="name">You</span>
