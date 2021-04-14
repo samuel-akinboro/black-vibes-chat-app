@@ -61,7 +61,7 @@ function RoomChat({type}) {
 
       })
     }
-  }, [roomId]);
+  }, [roomId, email, state.user.email, type]);
 
   if (type === "room") {
     
