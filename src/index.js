@@ -6,11 +6,7 @@ import App from './App';
 import {StateProvider} from './state-management/StateProvider';
 import { initialState } from './state-management/reducer';
 import reducer from './state-management/reducer'
-<<<<<<< HEAD
-import redux from './playground/redux-101.js'
-=======
 // import redux from './playground/redux-101.js'
->>>>>>> 54c1294 (glassmorphism)
 
 ReactDOM.render(
   <React.StrictMode>

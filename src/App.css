@@ -3,47 +3,17 @@
   width: 100vw;
   display: grid;
   place-content: center;
-<<<<<<< HEAD
-  background-color: #3B3D4A;
-  overflow-x: hidden;
-=======
   background-color: #3b3d4ae6;
   overflow-x: hidden;
   background-blend-mode: overlay;
->>>>>>> 54c1294 (glassmorphism)
 }
 
 .app__container{
   height: 90vh;
   width: 95vw;
-<<<<<<< HEAD
-  background-color: #232429;
-  color: white;
-  display: flex;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-=======
   background-color: #232429dd;
   color: white;
   display: flex;
 }
->>>>>>> 54c1294 (glassmorphism)
+

@@ -6,11 +6,7 @@ import { Avatar } from '@material-ui/core';
 import { useStateValue } from '../state-management/StateProvider';
 
 function IconSidebar() {
-<<<<<<< HEAD
-  const [{user}, dispatch] = useStateValue();
-=======
   const [{user}] = useStateValue();
->>>>>>> 54c1294 (glassmorphism)
     return (
       <div className="icon-sidebar">
         <div className="icon__sidebar__header">

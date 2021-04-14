@@ -24,26 +24,6 @@
     border: none;
     font-size: 18px;
     cursor: pointer;
-<<<<<<< HEAD
-}
-
-@keyframes example {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-/* The element to apply the animation to */
-.login__container img {
-    animation-name: example;
-    animation-duration: 0.7s;
-    animation-iteration-count: infinite;
-}
-=======
     margin-top: 2em;
 }
 
@@ -63,4 +43,3 @@
         transform: rotate(360deg);
     }
 }
->>>>>>> 54c1294 (glassmorphism)
