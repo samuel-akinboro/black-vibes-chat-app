@@ -139,11 +139,20 @@
  /* width */
  ::-webkit-scrollbar {
      width: 10px;
+<<<<<<< HEAD
+=======
+     cursor: pointer;
+>>>>>>> 54c1294 (glassmorphism)
  }
 
  /* Track */
  ::-webkit-scrollbar-track {
+<<<<<<< HEAD
      background: #232429;
+=======
+     /* background: #232429; */
+     background: #09090179;
+>>>>>>> 54c1294 (glassmorphism)
      border-radius: 10px;
  }
 

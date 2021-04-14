@@ -5,9 +5,17 @@ import Sidebar from './components/Sidebar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { useStateValue } from './state-management/StateProvider'
 import Login from './components/Login.jsx'
+<<<<<<< HEAD
 
 function App() {
   const [{ user }, dispatch] = useStateValue();
+=======
+import backgroundImage from './images/bg.jpg'
+
+function App() {
+  const [{ user }] = useStateValue();
+  const backgroundImageUrl = `url(${backgroundImage})`;
+>>>>>>> 54c1294 (glassmorphism)
   const ChatPage = () => (
     <>
       <IconSidebar />
@@ -16,7 +24,11 @@ function App() {
   )
 
   return (
+<<<<<<< HEAD
     <div className="app">
+=======
+    <div className="app" style={{backgroundImage: backgroundImageUrl, backgroundSize: "cover"}}>
+>>>>>>> 54c1294 (glassmorphism)
       <div className="app__container">
         <Router>
           <Switch>

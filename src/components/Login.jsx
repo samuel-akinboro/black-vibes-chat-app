@@ -19,7 +19,12 @@ function Login() {
     
     });
     return () => unsubscribe()
+<<<<<<< HEAD
    }, [])
+=======
+   })
+
+>>>>>>> 54c1294 (glassmorphism)
 
   const handleLogin = (e) => {
     auth.signInWithPopup(provider)
@@ -57,7 +62,11 @@ function Login() {
   return (
     <div className="login">
       <div className="login__container">
+<<<<<<< HEAD
           <img src="/images/loginIcon.svg" alt=""/>
+=======
+          <div className="spin"></div>
+>>>>>>> 54c1294 (glassmorphism)
           <button onClick={handleLogin}>Login with Google</button>
       </div>
     </div>

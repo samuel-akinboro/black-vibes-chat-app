@@ -24,6 +24,7 @@
     border: none;
     font-size: 18px;
     cursor: pointer;
+<<<<<<< HEAD
 }
 
 @keyframes example {
@@ -42,3 +43,24 @@
     animation-duration: 0.7s;
     animation-iteration-count: infinite;
 }
+=======
+    margin-top: 2em;
+}
+
+
+.spin{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 10px solid;
+    border-color: #EA9506 #27290157;
+    animation: 1s spin infinite linear;
+    margin-bottom: 2em;
+}
+
+@keyframes spin{
+    to{
+        transform: rotate(360deg);
+    }
+}
+>>>>>>> 54c1294 (glassmorphism)

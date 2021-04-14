@@ -7,7 +7,11 @@ import {database} from '../Firebase/Firebase'
 import {Link} from 'react-router-dom'
 
 function Sidebar() {
+<<<<<<< HEAD
   const [state, dispatch] = useStateValue();
+=======
+  const [state] = useStateValue();
+>>>>>>> 54c1294 (glassmorphism)
   const [messages, setMessages] = useState([]);
   // const [friends, setFriends] = useState([]);
 

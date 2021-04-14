@@ -11,9 +11,15 @@ function RoomChat({type}) {
   const [roomMessage, setRoomMessage] = useState([]);
   const [roomName, setRoomName] = useState("");
   const [email, setEmail] = useState("");
+<<<<<<< HEAD
   const [state, dispatch] = useStateValue();
   const [input, setInput] = useStateValue("");
   const [friendMessage, setFriendMessage] = useState([]);
+=======
+  const [state] = useStateValue();
+  const [input, setInput] = useState("");
+  // const [friendMessage, setFriendMessage] = useState([]);
+>>>>>>> 54c1294 (glassmorphism)
   
   useEffect(() => {
     if (type === "room") {
@@ -39,7 +45,12 @@ function RoomChat({type}) {
         let you = users.filter(user => user.email === state.user.email)
         console.log(you)
 
+<<<<<<< HEAD
         database.collection("users").doc(you[0].id).collection("allMessages").onSnapshot(snapshot => {
+=======
+      if (you){
+          database.collection("users").doc(you[0].id).collection("allMessages").onSnapshot(snapshot => {
+>>>>>>> 54c1294 (glassmorphism)
 
           // getting the id of the person you want to send the message to
           const friends = snapshot.docs.map(doc => ({
@@ -56,6 +67,10 @@ function RoomChat({type}) {
             }))))
           
         });
+<<<<<<< HEAD
+=======
+      }
+>>>>>>> 54c1294 (glassmorphism)
 
       })
     }
@@ -127,6 +142,57 @@ function RoomChat({type}) {
             <span className="timestamp">{new Date().toUTCString()}</span>
           </p>
 
+<<<<<<< HEAD
+=======
+          <p className="message sender">
+            <span className="name">You</span>
+            How are you doing
+            <span className="timestamp">{new Date().toUTCString()}</span>
+          </p>
+
+          <p className="message">
+            <span className="name">john snow</span>
+            I'm fine, what about you
+            <span className="timestamp">{new Date().toUTCString()}</span>
+          </p>
+
+          <p className="message sender">
+            <span className="name">You</span>
+            How are you doing
+            <span className="timestamp">{new Date().toUTCString()}</span>
+          </p>
+
+          <p className="message">
+            <span className="name">john snow</span>
+            I'm fine, what about you
+            <span className="timestamp">{new Date().toUTCString()}</span>
+          </p>
+
+          <p className="message sender">
+            <span className="name">You</span>
+            How are you doing
+            <span className="timestamp">{new Date().toUTCString()}</span>
+          </p>
+
+          <p className="message">
+            <span className="name">john snow</span>
+            I'm fine, what about you
+            <span className="timestamp">{new Date().toUTCString()}</span>
+          </p>
+
+          <p className="message sender">
+            <span className="name">You</span>
+            How are you doing
+            <span className="timestamp">{new Date().toUTCString()}</span>
+          </p>
+
+          <p className="message">
+            <span className="name">john snow</span>
+            I'm fine, what about you
+            <span className="timestamp">{new Date().toUTCString()}</span>
+          </p>
+
+>>>>>>> 54c1294 (glassmorphism)
           {roomMessage.map((message) => (
             <p className="message sender">
               <span className="name">You</span>
