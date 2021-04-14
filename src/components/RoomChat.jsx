@@ -99,9 +99,6 @@ function RoomChat({type}) {
             <IconButton className="room__headerIcons">
               <Star />
             </IconButton>
-            <IconButton className="room__headerIcons">
-              <Star />
-            </IconButton>
           </div>
         </div>
         <div className="room__chat__body">
@@ -128,6 +125,7 @@ function RoomChat({type}) {
             I'm fine, what about you
             <span className="timestamp">{new Date().toUTCString()}</span>
           </p>
+
 
           {roomMessage.map((message) => (
             <p className="message sender">

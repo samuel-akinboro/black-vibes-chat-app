@@ -63,7 +63,7 @@
 
 .room__chat__body {
     padding: 1.5em 10px;
-    overflow-y: scroll;
+    overflow-y: auto;
     flex: 1;
 }
 
