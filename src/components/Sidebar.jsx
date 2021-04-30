@@ -13,15 +13,8 @@ function Sidebar() {
   // const [friends, setFriends] = useState([]);
 
   const friendsList = state.friends.filter(friend => friend.email !== state.user.email);
-
-
-  useEffect(() => {
-    const unsubscribe = database.collection('rooms').onSnapshot(snapshot => setMessages(snapshot.docs.map(room => ({
-      id: room.id,
-      ...room.data()
-    }))));
-    return () => unsubscribe();
-   }, []);
+  const groups = [...state.rooms];
+  
 
   // setFriends(state.friends)
 
@@ -49,8 +42,7 @@ function Sidebar() {
             <h2>FAVORITES</h2>
             <Add onClick={createGroupChat} />
           </div>
-          {messages
-            .filter((message) => message.category === "group")
+          {groups
             .map((message) => (
               <Link className="message-link" to={`/group/${message.id}`} key={message.id}>
                 <div className="single__favorite">

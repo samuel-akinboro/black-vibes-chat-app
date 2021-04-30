@@ -73,8 +73,9 @@
     border-radius: 6px;
     position: relative;
     background-color: #2A2E37;
-    margin-bottom: 15px;
-    max-width: 25vw;
+    margin-bottom: 25px;
+    /* margin-top: 50px; */
+    max-width: 47%;
 }
 
 .room__chat__body .sender {

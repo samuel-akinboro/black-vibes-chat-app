@@ -9,10 +9,10 @@
 }
 
 .app__container{
-  height: 90vh;
-  width: 95vw;
+  height: 100vh;
+  width: 100vw;
 
-  background-color: #232429dd;
+  background-color: #23242989;
   color: white;
   display: flex;
 }

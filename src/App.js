@@ -24,12 +24,20 @@ function App() {
         <Router>
           <Switch>
             <Route path="/group/:roomId">
-              <ChatPage />
-              <Chat type="room"/>
+              {user != null ? 
+                <>
+                  <ChatPage />
+                  <Chat type="room"/>
+                </> : <Login />
+              }
             </Route>
             <Route path="/message/:roomId">
-              <ChatPage />
-              <Chat type="message"/>
+              {user != null ? 
+                <>
+                  <ChatPage />
+                  <Chat type="message"/>
+                </> : <Login />
+              }
             </Route>
             <Route path="/">
               {user ? <ChatPage /> : <Login />}
