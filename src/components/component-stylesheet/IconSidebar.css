@@ -30,9 +30,43 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 1em;
+    position: relative;
 }
 
 .icon__sidebar__footer .MuiSvgIcon-root{
     margin-bottom: 10px;
     color: #68676D;
+}
+
+.icon__sidebar__footer > .log-out-modal{
+    background-color: rgba(0, 0, 0, 0.783);
+    position: absolute;
+    right: -86px;
+    top: 39%;
+}
+
+.icon__sidebar__footer > .log-out-modal::before{
+    content: "";
+    position: absolute;
+    left: -14px;
+    bottom: 6px;
+    /* height: 20px;
+    width: 20px; */
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent rgba(0, 0, 0, 0.783) transparent transparent;
+}
+
+.icon__sidebar__footer > .log-out-modal > button:hover{
+    background-color: rgba(2, 2, 2, 0.954);
+    color: #bf9209;
+}
+
+.icon__sidebar__footer > .log-out-modal > button{
+    border: none;
+    background-color: transparent;
+    padding: 8px 16px;
+    color: #FFC101;
+    cursor: pointer;
+    transition: 0.3s;
 }

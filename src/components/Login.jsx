@@ -39,7 +39,7 @@ function Login() {
     
     });
     return () => unsubscribe()
-   })
+   }, [])
 
   const handleLogin = (e) => {
     setIsLoading(true)
